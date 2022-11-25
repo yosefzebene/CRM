@@ -1,0 +1,7 @@
+<h3>Customers</h3>
+
+<ul>
+    <% @customers.each do |customer| %>
+        <%= render "customer", customer: customer %>
+    <% end %>
+</ul>

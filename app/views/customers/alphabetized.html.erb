@@ -1,0 +1,7 @@
+<h3>Customers Alphabetical Order</h3>
+
+<ul>
+    <% @orderd_customers.each do |customer| %>
+        <%= render "customer", customer: customer %>
+    <% end %>
+</ul>
