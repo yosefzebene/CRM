@@ -1,0 +1,24 @@
+<div class="box has-background-primary">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-128x128">
+        <%= image_tag customer.picture.variant(:profile), class: "is-rounded" %>
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+          <h3 class="title is-4"><%= customer.firstname %> <%= customer.lastname %></h3> 
+          
+          <br>
+          <strong>Phone Number: </strong><small><%= customer.phonenumber %></small>
+          <br>
+          <strong>Email: </strong><small><%= customer.email %></small>
+          <br>
+          <br>
+          <div class="block">
+            <%= customer.notes %>
+          </div>
+      </div>
+    </div>
+  </article>
+</div>

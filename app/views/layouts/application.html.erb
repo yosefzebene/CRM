@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
   <head>
     <title>CRM</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,6 +11,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "layouts/nav"%>
+    <section class="section">
+      <%= yield %>
+    </section>
   </body>
 </html>
